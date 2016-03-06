@@ -4,6 +4,7 @@ import java.util.List;
 
 public class Topico {
 
-	private List<Material> materiaisDeEstudo;
+	private Long id;
+	private List<Material> materiais;
 	
 }

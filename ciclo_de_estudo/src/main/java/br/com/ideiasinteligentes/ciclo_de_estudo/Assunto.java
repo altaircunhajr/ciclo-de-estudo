@@ -4,8 +4,13 @@ import java.util.List;
 
 public class Assunto {
 
+	private Long id;
 	private Disciplina disciplina;
-	private List<Material> materiaisDeEstudo;
+	private List<Material> materiais;
 	private List<Topico> topicos;
+	
+	public Long getId() {
+		return id;
+	}
 	
 }

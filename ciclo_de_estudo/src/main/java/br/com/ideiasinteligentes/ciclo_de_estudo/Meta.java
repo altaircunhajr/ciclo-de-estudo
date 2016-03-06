@@ -5,6 +5,7 @@ import java.util.List;
 
 public class Meta {
 
+	private Long id;
 	private Calendar dataDeInicio;
 	private Calendar dataDeConclusao;
 	private List<Assunto> assuntos;
@@ -17,4 +18,11 @@ public class Meta {
 		return this.dataDeConclusao;
 	}
 	
+	public void adicionarAssunto(Assunto novoAssunto) {
+		this.assuntos.add(novoAssunto);
+	}
+	
+	public void removerAssunto(Assunto assunto) {
+		this.assuntos.remove(assunto);
+	}
 }
