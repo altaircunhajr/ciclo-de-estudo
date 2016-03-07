@@ -6,7 +6,9 @@ import java.util.Date;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class MetaDeEstudoTest {
+import br.com.ideiasinteligentes.ciclo_de_estudo.core.meta.Meta;
+
+public class MetaTest {
 
 	@Test
 	public void deveDefinirADataDeConclusaoQuandoForAlcancada() {
