@@ -10,6 +10,7 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
 import br.com.ideiasinteligentes.ciclo_de_estudo.core.aluno.Aluno;
@@ -24,6 +25,7 @@ public class Ciclo {
 	private String nome;
 	@OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, orphanRemoval = true)
 	private List<Meta> metas = new ArrayList<Meta>();
+	@ManyToOne
 	private Aluno aluno;
 
 	public void novaMeta(Meta novaMeta) {

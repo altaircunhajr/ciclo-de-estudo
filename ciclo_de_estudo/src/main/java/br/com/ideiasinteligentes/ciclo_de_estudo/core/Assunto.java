@@ -25,6 +25,7 @@ public class Assunto {
 	private List<Material> materiais;
 	@OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
 	private List<Topico> topicos;
+	@ManyToOne
 	private Aluno aluno;
 	
 	public Long getId() {

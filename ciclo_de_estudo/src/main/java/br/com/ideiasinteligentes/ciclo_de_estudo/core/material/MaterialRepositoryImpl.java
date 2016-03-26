@@ -3,7 +3,7 @@ package br.com.ideiasinteligentes.ciclo_de_estudo.core.material;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-public class MaterialRepositoryCustomImpl implements MaterialRepositoryCustom {
+public class MaterialRepositoryImpl implements MaterialRepositoryCustom {
 
 	@PersistenceContext
 	EntityManager em;

@@ -27,6 +27,7 @@ public class Meta {
 	private Ciclo ciclo;
 	@OneToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
 	private List<Material> materiais;
+	@ManyToOne
 	private Aluno aluno;
 	
 	public void foiAlcancadaEm(Calendar dataDeConclusao) {

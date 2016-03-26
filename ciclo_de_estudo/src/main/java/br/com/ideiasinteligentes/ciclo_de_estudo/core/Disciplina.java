@@ -6,6 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
 import br.com.ideiasinteligentes.ciclo_de_estudo.core.aluno.Aluno;
@@ -19,6 +20,7 @@ public class Disciplina {
 	private String nome;
 	@OneToMany
 	private List<Assunto> assuntos;
+	@ManyToOne
 	private Aluno aluno;
 	
 	public Long getId() {

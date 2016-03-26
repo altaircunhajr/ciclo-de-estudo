@@ -3,7 +3,7 @@ package br.com.ideiasinteligentes.ciclo_de_estudo.core.meta;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-public class MetaRepositoryCustomImpl implements MetaRepositoryCustom {
+public class MetaRepositoryImpl implements MetaRepositoryCustom {
 
 	@PersistenceContext
 	EntityManager em;
